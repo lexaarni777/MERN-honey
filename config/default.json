@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "jwtSecret": "jwtSecret 312",
+    "mongoUri": "mongodb+srv://Lexa:9q8w7e6a5s4d@cluster0.nkwhi.mongodb.net/honey?retryWrites=true&w=majority"
+}
