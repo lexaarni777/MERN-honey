@@ -7,14 +7,16 @@ const Product = require('../models/Product')
 
 router.post('/crateProduct',
     [check('name', 'Введите корректное имя').isString()],
+    [check('des', 'Введите корректное описание').isString()],
     async (req) => {
         try{
-            const {name} = req.body
+            const {name,des} = req.body
 
             const product = new Product ({
-                name
+                name,
+                des
             })
-            
+            console.log('product:',product)
             await product.save()
 
         }catch (e){
